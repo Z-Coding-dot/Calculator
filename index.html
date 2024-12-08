@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="style.css">
     <title>calculator-app</title>
 </head>
+
 <body>
     <div id="calculator">
         <input id="display" readonly>
         <div id="keys">
             <button onclick="clearDisplay('AC')" class="btn">AC</button>
             <button onclick="clearDisplayOne('C')" class="btn">C</button>
-            <button onclick="appendToDisplay('%')" class="btn">%</button>
+            <button onclick="module('%')" class="btn">%</button>
             <button onclick="appendToDisplay('/')" class="btn">/</button>
             <button onclick="appendToDisplay('7')">7</button>
             <button onclick="appendToDisplay('8')">8</button>
@@ -32,8 +33,6 @@
             <button onclick="calculate('=')" class="btn">=</button>
         </div>
     </div>
-
-
     <script src="script.js"></script>
 </body>
 </html>
